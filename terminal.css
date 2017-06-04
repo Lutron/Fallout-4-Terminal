@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display:flex;
+    align-items:center;
+    flex-flow:column;
+    bottom: 0;
+    overflow: hidden;
+    background-color: black;
+    line-height:47.5px;
+    font-size:35px;
+    font-family: 'Share Tech Mono';
+    acolor: transparent;
+    atext-shadow: 0 0 2px green;
+    color: green;
+    white-space: pre-line;
+    word-wrap: break-word;
+}
+#input {
+    max-width:100%;
+    width:980px;
+}
+#output {
+    height: 95%;
+    max-width:100%;
+    width:980px;
+    overflow: hidden;
+}
+
+#output > div {
+    //white-space:pre;
+}
+
+#output > div.menu.active {
+    background-color: green;
+    atext-shadow: 0 0 2px black;
+    color: black;
+    border-radius: 2px;
+}
+
+#cursor {
+    font-size: 50%;
+    vertical-align: top;
+    aaanimation: blink-animation 1s steps(2, start) infinite;
+    aa-webkit-animation: blink-animation 1s steps(2, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
